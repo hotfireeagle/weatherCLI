@@ -1,0 +1,18 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "ts cli for search weather info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tslint": "node ./node_modules/.bin/tslint --init"
+  },
+  "keywords": [],
+  "author": "hotfireeagle",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  }
+}

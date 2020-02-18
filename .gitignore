@@ -1,0 +1,6 @@
+# logs
+logs
+*.log
+
+# useless dir
+node_modules/
