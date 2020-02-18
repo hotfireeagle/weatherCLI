@@ -5,12 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tslint": "node ./node_modules/.bin/tslint --init"
+    "tslint": "node ./node_modules/.bin/tslint --init",
+    "commitCheck": "node ./node_modules/.bin/tslint -c tslint.json './src/*.ts'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run commitCheck"
+    }
   },
   "keywords": [],
   "author": "hotfireeagle",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^4.2.3",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
