@@ -4,6 +4,7 @@
   "description": "ts cli for search weather info",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tslint": "node ./node_modules/.bin/tslint --init",
     "commitCheck": "node ./node_modules/.bin/tslint -c tslint.json './src/**/*.ts'"
@@ -17,9 +18,14 @@
   "author": "hotfireeagle",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^13.7.2",
     "husky": "^4.2.3",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^4.1.1"
   }
 }
