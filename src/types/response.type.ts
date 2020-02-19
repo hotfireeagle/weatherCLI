@@ -17,3 +17,7 @@ interface ILive {
   humidity: string           // 舒适度
   reporttime: string         // 采集时间
 }
+
+export {
+  IWeatherResponse
+}
